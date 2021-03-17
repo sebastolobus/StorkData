@@ -69,7 +69,7 @@ sqrt(0.3847)
 
 But the R statistic they are talking about, the correlation coefficient, is pretty useful, so lemme show you how to get that without digging through a linear model.There are a few kinds of coreelation coefficient calculation methods. The Pearson is standard, and I suspect that's what Matthews used. 
 
-# Calculating correlation coeeficients
+# Calculating correlation coefficients
 ```{r}
 cor(StorkData$Storks,StorkData$Birth_rate, method= "pearson")
 ```
