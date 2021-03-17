@@ -13,7 +13,9 @@ summary(StorkData.lm)
 #plotting the regression (with std error)
 ggplot(StorkData, aes(x=Storks, y=Birth_rate)) + 
   geom_point()+
-  geom_smooth(method=lm)
+  geom_smooth(method=lm)+
+  labs(title="Birthrate as a function of stork population",
+       x="Storks (pairs)", y = "Birth Rate (10^3/yr)")
 
 #could use   geom_smooth(method=lm, se=FALSE)  to eliminate error
 # see http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization
@@ -40,4 +42,6 @@ summary(StorkDataArea.lm)
 #plotting the regression (with std error)
 ggplot(StorkData, aes(x=Area, y=Birth_rate)) + 
   geom_point()+
-  geom_smooth(method=lm)
+  geom_smooth(method=lm)+
+  labs(title="Birthrate as a function of national area",
+       x="Area (km^2)", y = "Birth Rate (10^3/yr)")
